@@ -1,0 +1,3 @@
+[submodule "Adafruit-MCP4725-PCB"]
+	path = Adafruit-MCP4725-PCB
+	url = https://github.com/adafruit/Adafruit-MCP4725-PCB.git

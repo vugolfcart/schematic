@@ -1,0 +1,474 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 12296 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1650 1600 1550 1600
+Wire Wire Line
+	1250 1600 1250 1400
+Text Label 1350 1600 0    70   ~ 0
+SCL
+Wire Wire Line
+	1650 1700 950  1700
+Wire Wire Line
+	950  1700 950  1400
+Text Label 1350 1700 0    70   ~ 0
+SDA
+Wire Wire Line
+	950  1000 950  900 
+Text Label 950  1000 0    10   ~ 0
+VDD
+Wire Wire Line
+	1250 1000 1250 900 
+Text Label 1250 1000 0    10   ~ 0
+VDD
+Wire Wire Line
+	2650 1700 3350 1700
+Wire Wire Line
+	3350 1700 3350 1500
+Wire Wire Line
+	3350 1500 3350 1400
+Wire Wire Line
+	3450 1500 3350 1500
+Connection ~ 3350 1500
+Text Label 2650 1700 0    10   ~ 0
+VDD
+Wire Wire Line
+	2650 1800 3350 1800
+Wire Wire Line
+	3350 1800 3350 1900
+Wire Wire Line
+	3450 1800 3350 1800
+Connection ~ 3350 1800
+Text Label 2650 1800 0    10   ~ 0
+GND
+Wire Wire Line
+	1250 2300 1250 2400
+Text Label 1250 2300 0    10   ~ 0
+GND
+Wire Wire Line
+	2650 1600 3050 1600
+Text Label 2750 1600 0    70   ~ 0
+VOUT
+Wire Wire Line
+	1650 1800 1250 1800
+Wire Wire Line
+	1250 1800 1250 1900
+Text Label 1350 1800 0    70   ~ 0
+A0
+$Comp
+L schematic-eagle-import:DAC_MCP4725 T1
+U 1 1 03567200
+P 2150 1700
+F 0 "T1" H 1750 2300 59  0000 L BNN
+F 1 "MCP4725A1T-E/CH" H 1750 1100 59  0000 L BNN
+F 2 "schematic:SOT23-6" H 2150 1700 50  0001 C CNN
+F 3 "" H 2150 1700 50  0001 C CNN
+	1    2150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:RESISTOR0805 R1
+U 1 1 4C88E097
+P 1250 1200
+F 0 "R1" H 1150 1280 50  0000 L BNN
+F 1 "10K" H 1150 1075 50  0000 L BNN
+F 2 "schematic:0805" H 1250 1200 50  0001 C CNN
+F 3 "" H 1250 1200 50  0001 C CNN
+	1    1250 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L schematic-eagle-import:RESISTOR0805 R2
+U 1 1 748ED202
+P 950 1200
+F 0 "R2" H 850 1280 50  0000 L BNN
+F 1 "10K" H 850 1075 50  0000 L BNN
+F 2 "schematic:0805" H 950 1200 50  0001 C CNN
+F 3 "" H 950 1200 50  0001 C CNN
+	1    950  1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L schematic-eagle-import:VDD #U$02
+U 1 1 A8B04D1A
+P 3350 1400
+F 0 "#U$02" H 3350 1400 50  0001 C CNN
+F 1 "VDD" H 3290 1540 42  0000 L BNN
+F 2 "" H 3350 1400 50  0001 C CNN
+F 3 "" H 3350 1400 50  0001 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:GND #U$03
+U 1 1 54307519
+P 3350 2000
+F 0 "#U$03" H 3350 2000 50  0001 C CNN
+F 1 "GND" H 3290 1900 42  0000 L BNN
+F 2 "" H 3350 2000 50  0001 C CNN
+F 3 "" H 3350 2000 50  0001 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:VDD #U$04
+U 1 1 84E86E02
+P 950 900
+F 0 "#U$04" H 950 900 50  0001 C CNN
+F 1 "VDD" H 890 1040 42  0000 L BNN
+F 2 "" H 950 900 50  0001 C CNN
+F 3 "" H 950 900 50  0001 C CNN
+	1    950  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:VDD #U$05
+U 1 1 6A689A17
+P 1250 900
+F 0 "#U$05" H 1250 900 50  0001 C CNN
+F 1 "VDD" H 1190 1040 42  0000 L BNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:CAP_CERAMIC0805 C1
+U 1 1 E42EE33E
+P 3450 1700
+F 0 "C1" H 3550 1800 50  0000 L BNN
+F 1 "1.0µF" H 3550 1700 50  0000 L BNN
+F 2 "schematic:0805" H 3450 1700 50  0001 C CNN
+F 3 "" H 3450 1700 50  0001 C CNN
+	1    3450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:RESISTOR0805 R3
+U 1 1 D33015C9
+P 1250 2100
+F 0 "R3" H 1150 2180 50  0000 L BNN
+F 1 "10K" H 1150 1975 50  0000 L BNN
+F 2 "schematic:0805" H 1250 2100 50  0001 C CNN
+F 3 "" H 1250 2100 50  0001 C CNN
+	1    1250 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L schematic-eagle-import:GND #U$06
+U 1 1 371C5F19
+P 1250 2500
+F 0 "#U$06" H 1250 2500 50  0001 C CNN
+F 1 "GND" H 1190 2400 42  0000 L BNN
+F 2 "" H 1250 2500 50  0001 C CNN
+F 3 "" H 1250 2500 50  0001 C CNN
+	1    1250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4450 1550 4450
+Wire Wire Line
+	1350 4450 1350 4250
+Text Label 1450 4450 0    70   ~ 0
+SCL
+Wire Wire Line
+	1750 4550 1650 4550
+Wire Wire Line
+	1050 4550 1050 4250
+Text Label 1450 4550 0    70   ~ 0
+SDA
+Wire Wire Line
+	1050 3850 1050 3750
+Text Label 1050 3850 0    10   ~ 0
+VDD
+Wire Wire Line
+	1350 3850 1350 3750
+Text Label 1350 3850 0    10   ~ 0
+VDD
+Wire Wire Line
+	2750 4550 3450 4550
+Wire Wire Line
+	3450 4550 3450 4350
+Wire Wire Line
+	3450 4350 3450 4250
+Wire Wire Line
+	3550 4350 3450 4350
+Connection ~ 3450 4350
+Text Label 2750 4550 0    10   ~ 0
+VDD
+Wire Wire Line
+	2750 4650 3450 4650
+Wire Wire Line
+	3450 4650 3450 4750
+Wire Wire Line
+	3550 4650 3450 4650
+Connection ~ 3450 4650
+Text Label 2750 4650 0    10   ~ 0
+GND
+Wire Wire Line
+	2750 4450 3150 4450
+Text Label 2850 4450 0    70   ~ 0
+VOUT
+Text Label 1450 4650 0    70   ~ 0
+A0
+$Comp
+L schematic-eagle-import:DAC_MCP4725 T2
+U 1 1 5E688AC9
+P 2250 4550
+F 0 "T2" H 1850 5150 59  0000 L BNN
+F 1 "MCP4725A1T-E/CH" H 1850 3950 59  0000 L BNN
+F 2 "schematic:SOT23-6" H 2250 4550 50  0001 C CNN
+F 3 "" H 2250 4550 50  0001 C CNN
+	1    2250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:RESISTOR0805 U6
+U 1 1 5E688ACF
+P 1350 4050
+F 0 "U6" H 1250 4130 50  0000 L BNN
+F 1 "10K" H 1250 3925 50  0000 L BNN
+F 2 "schematic:0805" H 1350 4050 50  0001 C CNN
+F 3 "" H 1350 4050 50  0001 C CNN
+	1    1350 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L schematic-eagle-import:RESISTOR0805 U4
+U 1 1 5E688AD5
+P 1050 4050
+F 0 "U4" H 950 4130 50  0000 L BNN
+F 1 "10K" H 950 3925 50  0000 L BNN
+F 2 "schematic:0805" H 1050 4050 50  0001 C CNN
+F 3 "" H 1050 4050 50  0001 C CNN
+	1    1050 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L schematic-eagle-import:VDD U07
+U 1 1 5E688ADB
+P 3450 4250
+F 0 "U07" H 3450 4250 50  0001 C CNN
+F 1 "VDD" H 3390 4390 42  0000 L BNN
+F 2 "" H 3450 4250 50  0001 C CNN
+F 3 "" H 3450 4250 50  0001 C CNN
+	1    3450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:GND U08
+U 1 1 5E688AE1
+P 3450 4850
+F 0 "U08" H 3450 4850 50  0001 C CNN
+F 1 "GND" H 3390 4750 42  0000 L BNN
+F 2 "" H 3450 4850 50  0001 C CNN
+F 3 "" H 3450 4850 50  0001 C CNN
+	1    3450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:VDD U03
+U 1 1 5E688AE7
+P 1050 3750
+F 0 "U03" H 1050 3750 50  0001 C CNN
+F 1 "VDD" H 990 3890 42  0000 L BNN
+F 2 "" H 1050 3750 50  0001 C CNN
+F 3 "" H 1050 3750 50  0001 C CNN
+	1    1050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:VDD U05
+U 1 1 5E688AED
+P 1350 3750
+F 0 "U05" H 1350 3750 50  0001 C CNN
+F 1 "VDD" H 1290 3890 42  0000 L BNN
+F 2 "" H 1350 3750 50  0001 C CNN
+F 3 "" H 1350 3750 50  0001 C CNN
+	1    1350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:CAP_CERAMIC0805 U9
+U 1 1 5E688AF3
+P 3550 4550
+F 0 "U9" H 3650 4650 50  0000 L BNN
+F 1 "1.0µF" H 3650 4550 50  0000 L BNN
+F 2 "schematic:0805" H 3550 4550 50  0001 C CNN
+F 3 "" H 3550 4550 50  0001 C CNN
+	1    3550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3850 750  3750
+$Comp
+L schematic-eagle-import:VDD U01
+U 1 1 5E6D2895
+P 750 3750
+F 0 "U01" H 750 3750 50  0001 C CNN
+F 1 "VDD" H 690 3890 42  0000 L BNN
+F 2 "" H 750 3750 50  0001 C CNN
+F 3 "" H 750 3750 50  0001 C CNN
+	1    750  3750
+	1    0    0    -1  
+$EndComp
+Text Label 750  3850 0    10   ~ 0
+VDD
+$Comp
+L schematic-eagle-import:RESISTOR0805 U2
+U 1 1 5E6DCB8E
+P 750 4050
+F 0 "U2" H 650 4130 50  0000 L BNN
+F 1 "10K" H 650 3925 50  0000 L BNN
+F 2 "schematic:0805" H 750 4050 50  0001 C CNN
+F 3 "" H 750 4050 50  0001 C CNN
+	1    750  4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  4250 750  4650
+Wire Wire Line
+	750  4650 1750 4650
+Connection ~ 1650 1700
+Connection ~ 1550 1600
+Wire Wire Line
+	1550 1600 1250 1600
+Connection ~ 1550 4450
+Wire Wire Line
+	1550 4450 1350 4450
+Connection ~ 1650 4550
+Wire Wire Line
+	1650 4550 1050 4550
+$Comp
+L schematic-eagle-import:VDD U010
+U 1 1 5E5CC500
+P 5350 1600
+F 0 "U010" H 5350 1600 50  0001 C CNN
+F 1 "VDD" H 5290 1740 42  0000 L BNN
+F 2 "" H 5350 1600 50  0001 C CNN
+F 3 "" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1600 5350 1900
+Wire Wire Line
+	5450 4000 5450 4100
+$Comp
+L schematic-eagle-import:GND #U$01
+U 1 1 5E5CFC00
+P 5450 4200
+F 0 "#U$01" H 5450 4200 50  0001 C CNN
+F 1 "GND" H 5390 4100 42  0000 L BNN
+F 2 "" H 5450 4200 50  0001 C CNN
+F 3 "" H 5450 4200 50  0001 C CNN
+	1    5450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J?
+U 1 1 5E5D511E
+P 7750 2500
+F 0 "J?" H 7722 2432 50  0000 R CNN
+F 1 "E3 Optical Encoder" H 7722 2523 50  0000 R CNN
+F 2 "" H 7750 2500 50  0001 C CNN
+F 3 "~" H 7750 2500 50  0001 C CNN
+	1    7750 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L schematic-eagle-import:GND #U$?
+U 1 1 5E5DFB5D
+P 7400 2950
+F 0 "#U$?" H 7400 2950 50  0001 C CNN
+F 1 "GND" H 7340 2850 42  0000 L BNN
+F 2 "" H 7400 2950 50  0001 C CNN
+F 3 "" H 7400 2950 50  0001 C CNN
+	1    7400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L schematic-eagle-import:VDD U?
+U 1 1 5E5E1108
+P 7400 2000
+F 0 "U?" H 7400 2000 50  0001 C CNN
+F 1 "VDD" H 7340 2140 42  0000 L BNN
+F 2 "" H 7400 2000 50  0001 C CNN
+F 3 "" H 7400 2000 50  0001 C CNN
+	1    7400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2700 7400 2700
+Wire Wire Line
+	7400 2700 7400 2850
+Wire Wire Line
+	7550 2400 7400 2400
+Wire Wire Line
+	7400 2000 7400 2400
+$Comp
+L MCU_Module:Arduino_UNO_R2 A1
+U 1 1 5E5BF6C7
+P 5550 2900
+F 0 "A1" H 5550 1619 50  0000 C CNN
+F 1 "Arduino_UNO_R2" H 5550 1710 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R2" H 5550 2900 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 5550 2900 50  0001 C CNN
+	1    5550 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 1600 1550 2400
+Wire Wire Line
+	1650 1700 1650 1800
+Wire Wire Line
+	5050 2400 1550 2400
+Connection ~ 1550 2400
+Wire Wire Line
+	1550 2400 1550 4450
+Wire Wire Line
+	5050 2500 1650 2500
+Connection ~ 1650 2500
+Wire Wire Line
+	1650 2500 1650 4550
+Wire Wire Line
+	6600 2500 6600 2200
+Wire Wire Line
+	6600 2200 6050 2200
+Wire Wire Line
+	6500 2600 6500 2400
+Wire Wire Line
+	6500 2400 6050 2400
+Wire Wire Line
+	6500 2600 7550 2600
+Wire Wire Line
+	6600 2500 7550 2500
+Wire Wire Line
+	6050 2300 7550 2300
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5E63F37E
+P 7750 3550
+F 0 "J?" H 7722 3432 50  0000 R CNN
+F 1 "6-pin Auto Connector" H 7722 3523 50  0000 R CNN
+F 2 "" H 7750 3550 50  0001 C CNN
+F 3 "~" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	-1   0    0    1   
+$EndComp
+Connection ~ 1650 1800
+Wire Wire Line
+	1650 1800 1650 2500
+$EndSCHEMATC
